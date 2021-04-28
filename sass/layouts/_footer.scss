@@ -1,0 +1,47 @@
+.footer-logo {
+  margin-right: 0;
+  margin-bottom: 20px;
+}
+
+.footer__social {
+  margin-bottom: 0;
+}
+
+.footer__social:not(:first-child) {
+  margin-left: 70px;
+}
+
+.social__footer {
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+.footer__subscript {
+  position: relative;
+  margin-left: 110px;
+}
+
+.subscript__mail {
+  width: 358px;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  padding: 15px 0 15px 16px;
+  color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: var(--bg-icon-footer);
+}
+
+.icon__subscript {
+  margin-left: 10px;
+}

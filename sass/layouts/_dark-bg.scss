@@ -1,0 +1,13 @@
+.dark-bg {
+  background: var(--dark-bg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.dark-bg .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}

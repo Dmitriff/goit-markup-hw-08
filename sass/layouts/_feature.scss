@@ -1,15 +1,20 @@
 .section__title {
   color: var(--primary-text-color);
+  text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
 }
 
+.section {
+  @media screen and (min-width: 480px) and(max-width:1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
 .feature {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: -30px;
+  margin-left: 0;
   margin-bottom: 0;
   padding-left: 0;
   color: var(--list-text-color);
@@ -17,15 +22,45 @@
   font-size: 14px;
   line-height: 1.7;
 
-  & .item:nth-child(n) {
-    margin-right: 0;
+  @media screen and(min-width:768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -30px;
+    justify-content: center;
+  }
+  @media screen and(min-width:1200px) {
+    display: flex;
+    margin: -15px;
+    flex-wrap: nowrap;
   }
 }
 
+.feature__list-item {
+  @media screen and(min-width:768px) {
+    flex-basis: calc((100% - 90px) / 2);
+    margin: 15px;
+  }
+
+  &:nth-last-child(-n + 3) {
+    @media screen and(max-width:767px) {
+      margin-top: 30px;
+    }
+  }
+  @media screen and(min-width:1200px) {
+    width: calc((100% - 90px) / 3);
+    margin: 15px;
+  }
+
+  &:nth-last-child(n + 3) {
+    @media screen and(max-width:1199px) {
+    }
+  }
+}
 .feature__list-item::before {
   content: "";
   display: block;
   height: 120px;
+  border-radius: 4px;
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--premiry-bg-color);
@@ -49,10 +84,4 @@
 .icon-astronaut::before {
   background-image: url(../icon/astronaut.svg);
   margin-bottom: 30px;
-}
-
-.advantages li {
-  margin-left: 30px;
-  -ms-flex-preferred-size: calc((100% - 90px) / 3);
-  flex-basis: calc((100% - 90px) / 3);
 }

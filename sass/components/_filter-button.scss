@@ -8,11 +8,24 @@
   padding-left: 0;
   margin-bottom: 50px;
 
-  & > li:not(:first-child) {
-    margin-left: 8px;
+  & > li:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  @media screen and(max-width:767px) {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+  @media screen and(max-width:1199px) {
+    margin-bottom: 30px;
   }
 }
-
+.filter-button__item {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 15px;
+  }
+}
 .filter-button__link {
   padding: 6px 22px;
   font-weight: 500;

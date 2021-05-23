@@ -6,9 +6,7 @@
   font-size: 18px;
   line-height: 1.22;
 
-  color: var(--accent-color);
-
-  @media screen and(min-width:767.98px) {
+  @media screen and(min-width:768px) {
     display: none;
   }
 }
@@ -19,4 +17,7 @@
 .mod-socials__item:not(:last-child) {
   margin-right: 10px;
   border-right: solid 1px rgba(33, 33, 33, 0.2);
+}
+.mod-socials__link {
+  color: var(--accent-color);
 }

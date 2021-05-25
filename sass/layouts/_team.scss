@@ -6,7 +6,12 @@
   margin-bottom: 50px;
   color: var(--primary-text-color);
 }
-
+.section__caption {
+  @media screen and (min-width: 480px) and(max-width:1199px) {
+    margin-bottom: 30px;
+    font-size: 28px;
+  }
+}
 .team {
   background: var(--premiry-bg-color);
   padding-top: 94px;
